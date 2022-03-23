@@ -1,0 +1,18 @@
+.css-1xo07ii {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+.V2yfr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.colorGeneral{
+    background: linear-gradient(135deg, #ffd665 0%, #ffd665 80%) !important;
+	color: rgb(0, 0, 0);
+}
+.textColor{
+   color: #ffd665;
+}
