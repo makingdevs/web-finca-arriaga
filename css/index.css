@@ -11,6 +11,7 @@
 .colorGeneral{
   background: linear-gradient(135deg, #ffd665 0%, #ffd665 80%) !important;
 	color: rgb(0, 0, 0);
+  word-wrap: break-word;
 }
 .textColor{
   color: #ffd665 !important;
@@ -23,4 +24,7 @@
 }
 .textSize{
   font-size: 16px !important;
+}
+.colorSections{
+  background-color: #cfcfcf !important;
 }
