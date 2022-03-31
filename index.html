@@ -121,7 +121,6 @@
       data-plugin-options="{'autoplayTimeout': 9000}" style="height: 100vh;">
       <div class="owl-stage-outer">
         <div class="owl-stage">
-
           <!-- Carousel Slide 1 -->
           <div class="owl-item position-relative overlay overlay-show overlay-op-8"
             style="background-image: url(img/cafeGE.jpeg); background-size: cover; background-position: center; height: 100vh;">
@@ -147,11 +146,12 @@
               </div>
             </div>
           </div>
-
           <!-- Carousel Slide 2 -->
           <div class="owl-item position-relative video overlay overlay-show overlay-op-8"
-            data-video-path="video/coffee-bean1" data-plugin-video-background
             data-plugin-options="{'posterType': 'jpg', 'position': '50% 50%'}" style="height: 100vh;">
+            <video autoplay muted loop id="myVideo">
+              <source src="video/coffee-bean1.mp4" type="video/mp4">
+            </video>
             <div class="container position-relative z-index-3 h-100">
               <div class="row justify-content-center align-items-center h-100">
                 <div class="col-lg-6 text-center">
@@ -173,7 +173,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
       <div class="owl-nav">
