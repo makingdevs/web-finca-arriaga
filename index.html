@@ -546,8 +546,6 @@
     <!-- CONTENT END-->
 
     <section class="section section-no-border section-angled bg-color-light-scale-1 m-0">
-      <div class="section-angled-layer-top section-angled-layer-increase-angle"
-        style="padding: 5rem 0; background-color: #8d5543;"></div>
       <div class="container py-5 my-5">
         <div class="row align-items-center text-center my-5">
           <div class="col-md-6">
@@ -580,12 +578,13 @@
         </div>
       </div>
     </section>
+
     <div id="div-cookies" style="display: none;">
-      Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso, más información en
-      <a hreflang="es" href="/info/aviso-legal">Aviso Legal</a>
+      <img src="img/cookie.png" />
+      Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso
       y la
-      <a hreflang="es" href="/info/politica-de-privacidad">Política de Privacidad</a>.
-      <button type="button" class="btn btn-sm btn-primary" onclick="acceptCookies()">
+      <a class="textColor" hreflang="es" href="privacy.html">Política de Privacidad</a>.
+      <button type="button" class="btn btn-sm colorGeneral" onclick="acceptCookies()">
         Acepto el uso de cookies
       </button>
     </div>
@@ -678,13 +677,13 @@
 
 <script>
   function checkAcceptCookies() {
-    if (localStorage.acceptCookies == 'true') {
+    if (localStorage.acceptCookies == 'false') {
     } else {
       $('#div-cookies').show();
     }
   }
   function acceptCookies() {
-    localStorage.acceptCookies = 'true';
+    localStorage.acceptCookies = 'false';
     $('#div-cookies').hide();
   }
   $(document).ready(function () {

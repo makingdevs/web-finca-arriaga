@@ -43,9 +43,9 @@
   bottom: 0px;
   left: 0px;
   width: 100%;
-  background-color: white;
-  box-shadow: 0px -5px 15px gray;
-  padding: 7px;
+  color: white;
+  background-color: #272829;
+  padding: 18px;
   text-align: center;
   z-index: 99;
 }
