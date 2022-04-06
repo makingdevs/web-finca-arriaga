@@ -42,7 +42,6 @@
 
   <!-- Skin CSS -->
   <link id="skinCSS" rel="stylesheet" href="./node_modules/porto/css/skins/skin-landing.css">
-  <link id="skinCSS" rel="stylesheet" href="./node_modules/porto/css/skins/skin-corporate-12.css">
 
   <!-- Theme Custom CSS -->
   <link rel="stylesheet" href="./node_modules/porto/css/custom.css">
@@ -78,13 +77,13 @@
                     <nav class="collapse">
                       <ul class="nav nav-pills" id="mainNav">
                         <li class="dropdown">
-                          <a class="dropdown-item dropdown-toggle textSize" href="index.html">
+                          <a class="dropdown-item textSize" data-hash data-hash-offset="130" href="index.html">
                             Inicio
                           </a>
 
                         </li>
                         <li class="dropdown">
-                          <a class="dropdown-item textSize" data-hash data-hash-offset="130" href="about.html">
+                          <a class="dropdown-item dropdown-toggle textSize" href="about.html">
                             Sobre nosotros
                           </a>
                           <ul class="dropdown-menu">
@@ -92,12 +91,12 @@
                           </ul>
                         </li>
                         <li class="dropdown dropdown-mega">
-                          <a class="dropdown-item dropdown-toggle textSize" href="packages.html">
+                          <a class="dropdown-item textSize" href="packages.html">
                             Paquetes
                           </a>
                         </li>
                         <li class="dropdown">
-                          <a class="dropdown-item dropdown-toggle textSize" href="contac.html">
+                          <a class="dropdown-item textSize" href="contac.html">
                             Contacto
                           </a>
                         </li>
@@ -545,33 +544,32 @@
     </section>
     <!-- CONTENT END-->
 
-    <section class="section section-no-border section-angled bg-color-light-scale-1 m-0">
-      <div class="container py-5 my-5">
-        <div class="row align-items-center text-center my-5">
-          <div class="col-md-6">
-            <h2 class="font-weight-bold text-9 mb-0 appear-animation" data-appear-animation="fadeInUpShorter"
-              data-appear-animation-delay="200" data-appear-animation-duration="750">UN POCO DE HISTORIA DEL CAFÉ</h2>
-            <p class="pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
-              data-appear-animation-delay="800" data-appear-animation-duration="750">El café es uno de los principales
-              granos aromáticos que México exporta a varias partes del mundo...
+    <section class="section section-height-3 bg-light border-0 m-0">
+      <div class="container container-xl-custom">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="overflow-hidden">
+              <h2
+                class="text-color-dark font-weight-extra-bold text-11 negative-ls-1 line-height-3 mb-0 appear-animation"
+                data-appear-animation="maskUp" data-appear-animation-delay="250">UN POCO DE HISTORIA DEL CAFÉ</h2>
+            </div>
+            <p class="text-4 line-height-9 pe-5 pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
+              data-appear-animation-delay="250">El café es uno de los principales granos aromáticos que México exporta a
+              varias partes del mundo...
             </p>
             <a href="caffeeTime.html"
-              class="btn btn-modern colorGeneral btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation"
-              data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
-              data-appear-animation-duration="750" target="_blank">Conoce Más</a>
+              class="btn colorGeneral btn-outline font-weight-extra-bold text-3 px-5 py-3 border-width-4 appear-animation mb-2"
+              data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">Conocer más</a>
           </div>
-          <div class="col-md-6 position-relative py-5">
-            <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
-              <img class="lazyload" src="./node_modules/porto/img/lazy.png"
-                data-src="./node_modules/porto/img/landing/porto_dots2.png" alt="" width="149" height="142"
-                style="position: absolute; top: -60px; right: -8%;">
-            </div>
-            <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="0"
-              data-appear-animation-duration="750">
-              <div class="strong-shadow rounded strong-shadow-top-right">
-                <img src="img/inicio2.jpg" data-src="img/inicio2.jpg"
-                  class="lazyload img-fluid border border-width-10 border-color-light rounded box-shadow-3"
-                  alt="Porto Admin" />
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-6 col-xl-4 order-1">
+                <img src="img/foto1R.png" class="img-fluid appear-animation" data-appear-animation="fadeInLeftShorter"
+                  data-appear-animation-delay="250" alt="" />
+              </div>
+              <div class="col-6 col-xl-4 order-2 order-xl-3">
+                <img src="img/foto2R.png" class="img-fluid appear-animation" data-appear-animation="fadeInRightShorter"
+                  data-appear-animation-delay="250" alt="" />
               </div>
             </div>
           </div>
@@ -580,12 +578,12 @@
     </section>
 
     <div id="div-cookies" style="display: none;">
-      <img src="img/cookie.png" />
+      <img class="mb-2" src="img/coffee.png" />
       Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso
       y la
       <a class="textColor" hreflang="es" href="privacy.html">Política de Privacidad</a>.
       <button type="button" class="btn btn-sm colorGeneral" onclick="acceptCookies()">
-        Acepto el uso de cookies
+        Acepto
       </button>
     </div>
     <!-- FOOTER -->
@@ -677,13 +675,13 @@
 
 <script>
   function checkAcceptCookies() {
-    if (localStorage.acceptCookies == 'false') {
+    if (localStorage.acceptCookies == 'true') {
     } else {
       $('#div-cookies').show();
     }
   }
   function acceptCookies() {
-    localStorage.acceptCookies = 'false';
+    localStorage.acceptCookies = 'true';
     $('#div-cookies').hide();
   }
   $(document).ready(function () {
