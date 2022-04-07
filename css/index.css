@@ -52,3 +52,17 @@
   text-align: center;
   z-index: 99;
 }
+.heightFooter{
+  height: none;
+}
+@media (max-width: 1024px){
+  .heightFooter{
+    display: block;
+    height: 599px;;
+  }
+}
+@media (max-width: 1026) {
+  .heightFooter{
+    height: none;
+  }
+}
