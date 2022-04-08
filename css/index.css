@@ -61,8 +61,20 @@
     height: 599px;;
   }
 }
-@media (max-width: 1026) {
+@media (max-width: 1026px) {
   .heightFooter{
     height: none;
+  }
+}
+
+@media (max-width: 991px){
+  .icons {
+    display: none;
+  }
+  .icon-arrow-down {
+    display: none;
+  }
+  .p-events-none{
+    display: none;
   }
 }
