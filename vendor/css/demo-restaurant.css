@@ -219,7 +219,7 @@ h1, h2, h3 {
 * Footer
 */
 #footer {
-		background: #2c2c2c;
+		background: #212529;
 }
 
 #footer p, #footer span, #footer li, #footer a:not(.btn):not(.no-footer-css) {
