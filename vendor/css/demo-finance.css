@@ -77,7 +77,7 @@
 }
 
 #footer p:hover, #footer span:hover, #footer li:hover, #footer a:not(.btn):not(.no-footer-css):hover {
-		color: #212121;
+		color: #888888;
 }
 
 #footer .footer-copyright p {
